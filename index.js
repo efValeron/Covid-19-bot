@@ -7,7 +7,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.start((ctx) => ctx.reply(`Приветствую ${ctx.message.from.first_name ? ctx.message.from.first_name : 'странник'}!`))
 bot.help((ctx) => ctx.reply(imp.commands))
 
-bot.command('course', async (ctx) => {
+bot.command('info', async (ctx) => {
     try {
         await ctx.replyWithHTML('<b>Курсы</b>', Markup.inlineKeyboard(
             [

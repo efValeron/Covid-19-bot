@@ -1,6 +1,7 @@
 const commands = `
 /start - Перезапустить бота
 /help - Доступный команды
+/info - Информация
 `
 
 const msg_btn_1 = `
